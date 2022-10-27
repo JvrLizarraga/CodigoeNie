@@ -19,7 +19,7 @@ document.getElementById("idheader").innerHTML =`
             </ul>
         </div>
         <div id="logo">
-            <a href="inicio.html" class="logo">CodigoÑ</a>
+            <a href="index.html" class="logo">CodigoÑ</a>
                         
         </div>
         <hr color=#ae02fd>
