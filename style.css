@@ -1,0 +1,312 @@
+
+/*############################################################################
+####################      GENERAL          ####################################
+############################################################################*/
+* {
+    background-color: #232323; 
+    color: #fd0404;
+    font-family:courier, "courier new", serif; 
+    font-size: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-left: 0px;
+    }
+
+
+
+.contenido {
+	width: auto;
+  height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.contenido ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+  height: 90vmin;	
+	animation: slide 10s infinite alternate ease-in-out;
+}
+
+.contenido li {
+	width: 100vw;
+
+	list-style: none;
+ 
+}
+
+.contenido img {
+	width: 100%;
+  
+  
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	33% {margin-left: 0;}
+	
+	34% {margin-left: -100%;}
+	66% {margin-left: -100%;}
+	
+	67% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+	
+	
+}
+
+
+article{
+  
+  padding: 10px;
+  color:rgb(8, 250, 28);
+  
+
+}
+
+
+/*############################################################################
+####################   FIN DE GENERAL          ####################################
+############################################################################*/
+
+
+
+
+
+/*############################################################################
+####################   Heder y footer          ####################################
+############################################################################*/     
+
+#header{
+  display: inline-flex;
+  flex-flow: row wrap;
+  font-size: 50rem;
+
+}
+
+
+#logo{
+    text-align: center;
+    color: #cdcdcd;
+    line-height: 100px;
+    margin: auto;
+    font-size: 2em;    
+    font-weight: bold;
+    padding-top: 0;
+}
+
+#logo a{
+  color: #ae02fd;
+  text-decoration: none;
+ 
+}
+
+.menufooter{
+    display: inline-flex;
+    float: none;
+    
+}
+
+.menufooter a{
+  padding: 2px;
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+.menufooter a:hover{
+  background-color: rgb(8, 250, 25);
+}
+
+.menufooter{
+  float: right  ;
+  margin-right: 30px;
+  margin-top: 20px;
+  
+}
+
+
+.box {
+  margin-top: 20px;
+}
+
+
+/*############################################################################
+####################    FIN de Heder y footer  ################################
+############################################################################*/     
+
+
+/*############################################################################
+####################    Redes, programacion y SO   ##############################
+############################################################################*/     
+
+.redes {
+  background-color: #232323;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(grid-fit, minmax(50px, 1fr));
+  
+}
+
+.redes li{
+  color: #ae02fd;
+  border: 5px solid rgb(8, 250, 25);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+.redes a{
+  text-decoration: none;
+  color: #ae02fd;
+  
+}
+
+
+
+
+.progrmacionHTML{
+  padding: 20px;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  grid-auto-flow: dense;
+}
+
+h1{
+  color: rgb(8, 250, 25);
+}
+
+/*############################################################################
+####################   FIN Redes, programacion y SO ################################
+############################################################################*/     
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%   Menu Hamburguesa   %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+
+
+
+
+  #menuHam {
+    display: inline-block;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  
+    z-index: 1;
+  
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuHam a {
+    text-decoration: none;
+    color: #232323;
+  
+    transition: color 0.3s ease;
+  }
+  
+
+  
+  #menuHam input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+  
+    cursor: pointer;
+  
+    opacity: 0; 
+    z-index: 2; 
+  
+    -webkit-touch-callout: none;
+  }
+  
+  #menuHam span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: #cdcdcd;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+     
+  }
+  
+  #menuHam span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuHam span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  
+  #menuHam input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  
+  #menuHam input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  
+  #menuHam input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+
+  #menuHam input:checked ~ ul {
+    transform: none;
+  }
+  
+  /* ############################################################
+  $$$$$$$$$$$$$$$    FIN DE MENU HAMBURGUESA      $$$$$$$$$$$$
+  ###############################################################*/
+

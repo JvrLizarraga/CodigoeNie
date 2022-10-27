@@ -1,0 +1,99 @@
+https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t
+
+URL = https://api.thecatapi.com/v1/images/search
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+////////////////////////////////
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (master)
+$ git remote add origin https://github.com/JvrLizarraga/CodigoeNie.git
+fatal: remote origin already exists.
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (master)
+$ git remote -v
+origin  https://github.com/JvrLizarraga/CodigoeNie.git (fetch)
+origin  https://github.com/JvrLizarraga/CodigoeNie.git (push)
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/JvrLizarraga/CodigoeNie.git/'
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/JvrLizarraga/CodigoeNie.git/'
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (master)
+$ git remote add origin git@github.com:JvrLizarraga/CodigoeNie.git
+git push -u origin mainfatal: remote origin already exists.
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (master)
+$ git branch -M main
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git push -u origin main
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/JvrLizarraga/CodigoeNie.git/'
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ echo "# CodigoeNie" >> README.md
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:JvrLizarraga/CodigoeNie.git
+git push -u origin main
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/jlizarraga/Documents/TPO/.git/
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git commit -m "first commit"
+[main cbf9492] first commit
+ Committer: LIZARRAGA <jlizarraga@LA.LOGICALIS.COM>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git branch -M main
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git remote add origin git@github.com:JvrLizarraga/CodigoeNie.git
+fatal: remote origin already exists.
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
+$ git push -u origin main
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/JvrLizarraga/CodigoeNie.git/'
+
+jlizarraga@AR-IT-0001080 MINGW64 ~/Mis documentos/TPO (main)
